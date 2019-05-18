@@ -1,0 +1,16 @@
+<div class="logo text-uppercase" [style.color]="normalFontColor">
+  Patient Dashboard
+</div>
+<div class="divider" [style.background-color]="dividerBgColor"></div>
+<div class="sidebar-wrapper">
+  <div class="nav-container">
+    <ul class="nav">
+      <li *ngFor="let menuItem of menuItems" routerLinkActive #rla="routerLinkActive" [ngClass]="rla.isActive? (menuItem.children === null? 'active' : '') : ''" [routerLinkActiveOptions]="{exact: true}">
+        <a [style.display]="menuItem.children === null? 'flex' : 'none'" [routerLink]="[menuItem.path]" [style.background-color]="rla.isActive? color : 'transparent'" [style.color]="rla.isActive? activeFontColor : normalFontColor">
+          <i class="material-icons">{{menuItem.icon}}</i>
+          <span>{{menuItem.title}}</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>

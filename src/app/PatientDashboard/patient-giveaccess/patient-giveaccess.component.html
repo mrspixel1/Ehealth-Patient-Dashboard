@@ -1,0 +1,44 @@
+<div class="container">
+    <app-navbar title="User Profile"></app-navbar>
+    <div class="row" style="margin-top: 30px">
+      <div class="col-md-8">
+        <div class="card">
+          <div class="card-header">
+            <i class="material-icons">thumb_up</i>
+          </div>
+          <div class="card-content">
+            <h4 class="card-title">Give access -
+              <small class="category">Give access to your heatlh record</small>
+            </h4>
+            <form>
+              <div class="row">
+                <div class="col-md-4">
+                  <mat-form-field color="accent">
+                    <input matInput type="text" placeholder="Provider Identifier" name="id">
+                  </mat-form-field>
+                </div>
+                <div class="col-md-8">
+                  <mat-form-field>
+                    <mat-label>Type of access</mat-label>
+                    <mat-select [(ngModel)] ="selectedValue" (selectionChange)="onchange(selectedValue)" name="selectedValue" required>
+                      <mat-option>--</mat-option>
+                      <mat-option *ngFor="let animal of animals" [value]="animal">
+                        {{animal.name}}
+                      </mat-option>
+                    </mat-select>
+                    <mat-error *ngIf="animalControl.hasError('required')">Please choose Type of access</mat-error>
+                    <mat-hint>{{animalControl.value?.sound}}</mat-hint>
+                  </mat-form-field>
+
+
+                </div>
+              </div>
+              <div class="row action-btn">
+                <button md-raised-button (click)="confirm()" class="btn btn-rose">CONFIRM</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

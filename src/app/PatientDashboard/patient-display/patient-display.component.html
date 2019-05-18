@@ -1,0 +1,217 @@
+<div class="container">
+    <app-navbar title="Display your health record"></app-navbar>
+    <div class="row" style="margin-top: 30px">
+      <div class="col-md-8">
+        <div class="card">
+          <div class="card-header">
+            <i class="material-icons">description</i>
+          </div>
+          <div class="card-content">
+            <h4 class="card-title">Display Data -
+              <small class="category">View your medical history</small>
+            </h4>
+            <form>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="card-content">
+                    <h4 class="card-title">Civil status :</h4>
+                    <form>
+                      <div class="row">
+                        <div class="col-md-6">
+                          FirstName :
+                        </div>
+                        <div class="col-md-6">
+                            <mat-form-field>
+                               <input matInput type="text" placeholder="Firstname" name="firstname" disabled>
+                            </mat-form-field>
+                        </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-md-6">
+                            LastName :
+                          </div>
+                          <div class="col-md-6">
+                              <mat-form-field>
+                                 <input matInput type="text" placeholder="Lastname" name="lastname" disabled>
+                              </mat-form-field>
+                          </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                              Address :
+                            </div>
+                            <div class="col-md-6">
+                                <mat-form-field>
+                                   <input matInput type="text" placeholder="Address" name="address" disabled>
+                                </mat-form-field>
+                            </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-md-4">
+                                <mat-form-field color="accent">
+                                  <input matInput type="text" placeholder="City" disabled>
+                                </mat-form-field>
+                              </div>
+                              <div class="col-md-4">
+                                <mat-form-field color="accent">
+                                  <input matInput type="text" placeholder="Country"disabled>
+                                </mat-form-field>
+                              </div>
+                              <div class="col-md-4">
+                                <mat-form-field color="accent">
+                                  <input matInput type="text" placeholder="Postcode"disabled>
+                                </mat-form-field>
+                              </div>
+                            </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-6">
+                    <div class="card-content">
+                      <h4 class="card-title">Medical history :</h4>
+                      <form>
+                        <div class="row">
+                          <div class="col-md-6">
+                            RecordId :
+                          </div>
+                          <div class="col-md-6">
+                              <mat-form-field>
+                                 <input matInput type="text" placeholder="RecordId" name="recordid" disabled>
+                              </mat-form-field>
+                          </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                Diseases :
+                            </div>
+                            <div class="col-md-6">
+                                <mat-form-field>
+                                   <input matInput type="text" placeholder="Diseases" name="diseases" disabled>
+                                </mat-form-field>
+                            </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-md-6">
+                                Allergies :
+                              </div>
+                              <div class="col-md-6">
+                                  <mat-form-field>
+                                     <input matInput type="text" placeholder="Allergies" name="allergies" disabled>
+                                  </mat-form-field>
+                              </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">Last consultation :</div>
+                                <div class="col-md-6">
+                                <mat-form-field color="accent">
+                                  <input matInput type="text" placeholder="Date" name="dateconsultation" disabled>
+                                </mat-form-field>
+                                <mat-form-field color="accent">
+                                    <input matInput type="text" placeholder="Symptoms" name="symptoms" disabled>
+                                  </mat-form-field>
+                                  <mat-form-field color="accent">
+                                      <input matInput type="text" placeholder="radiologie" name="radiologie" disabled>
+                                    </mat-form-field>
+                                    <mat-form-field color="accent">
+                                        <input matInput type="text" placeholder="Medical acts" name="medicalacts" disabled>
+                                      </mat-form-field>
+                                      <mat-form-field color="accent">
+                                          <input matInput type="text-area" placeholder="Description" name="description" disabled>
+                                        </mat-form-field>
+                                </div>
+                              </div>
+                              <div class="row">
+                                  <div class="col-md-6">Personal Health :</div>
+                                  <div class="col-md-6">
+                                  <mat-form-field color="accent">
+                                    <input matInput type="text" placeholder="Automedication" name="medicine" disabled>
+                                  </mat-form-field>
+                                  <mat-form-field color="accent">
+                                      <input matInput type="text" placeholder="Habits" name="symptoms" disabled>
+                                    </mat-form-field>
+                                    <mat-form-field color="accent">
+                                        <input matInput type="text" placeholder="Symptomes" name="radiologie" disabled>
+                                      </mat-form-field>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">Hospitalisation :</div>
+                                    <div class="col-md-6">
+                                    <mat-form-field color="accent">
+                                      <input matInput type="text" placeholder="Entry date" name="entrydate" disabled>
+                                    </mat-form-field>
+                                    <mat-form-field color="accent">
+                                        <input matInput type="text" placeholder="Period" name="period" disabled>
+                                      </mat-form-field>
+                                      <mat-form-field color="accent">
+                                          <input matInput type="text" placeholder="Reason" name="reason" disabled>
+                                        </mat-form-field>
+                                        <mat-form-field color="accent">
+                                            <input matInput type="text" placeholder="Urgent" name="urgent" disabled>
+                                          </mat-form-field>
+                                          <div class="row">
+                                              <div class="col-md-6">Address :</div>
+                                              <div class="col-md-6">
+                                              <mat-form-field color="accent">
+                                                <input matInput type="text" placeholder="Address" name="address" disabled>
+                                              </mat-form-field>
+                                              <mat-form-field color="accent">
+                                                  <input matInput type="text" placeholder="City" name="city" disabled>
+                                                </mat-form-field>
+                                                <mat-form-field color="accent">
+                                                    <input matInput type="text" placeholder="State" name="state" disabled>
+                                                  </mat-form-field>
+                                                  <mat-form-field color="accent">
+                                                      <input matInput type="text" placeholder="Country" name="country" disabled>
+                                                    </mat-form-field>
+                                              </div>
+                                          </div>
+                                          <mat-form-field color="accent">
+                                              <input matInput type="text" placeholder="Medical acts" name="medicalacts" disabled>
+                                            </mat-form-field>
+                                    </div>
+                                  </div>
+                                  <div class="row">
+                                      <div class="col-md-6">Last dispensation :</div>
+                                      <div class="col-md-6">
+                                      <mat-form-field color="accent">
+                                        <input matInput type="text" placeholder="date" name="date" disabled>
+                                      </mat-form-field>
+                                      <mat-form-field color="accent">
+                                          <input matInput type="text" placeholder="Symptomes" name="symptoms" disabled>
+                                        </mat-form-field>
+                                        <mat-form-field color="accent">
+                                            <input matInput type="textarea" placeholder="Description" name="description" disabled>
+                                          </mat-form-field>
+                                          <div class="row">
+                                              <div class="col-md-6">Dispensation :</div>
+                                              <div class="col-md-6">
+                                              <mat-form-field color="accent">
+                                                <input matInput type="text" placeholder="NoId" name="noid" disabled>
+                                              </mat-form-field>
+                                              <mat-form-field color="accent">
+                                                  <input matInput type="text" placeholder="Name" name="name" disabled>
+                                                </mat-form-field>
+                                                <mat-form-field color="accent">
+                                                    <input matInput type="text" placeholder="Peusologie" name="peusologie" disabled>
+                                                  </mat-form-field>
+                                                  <mat-form-field color="accent">
+                                                      <input matInput type="text" placeholder="amount" name="amount" disabled>
+                                                    </mat-form-field>
+                                              </div>
+                                          </div>
+                                      </div>
+                                    </div>
+
+                      </form>
+                    </div>
+                  </div>
+                </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

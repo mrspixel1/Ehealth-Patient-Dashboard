@@ -1,0 +1,217 @@
+<div class="container">
+  <app-navbar title="Display your health record"></app-navbar>
+  <div class="row" style="margin-top: 30px">
+    <div class="col-md-8">
+      <div class="card">
+        <div class="card-header">
+          <i class="material-icons">description</i>
+        </div>
+        <div class="card-content">
+          <h4 class="card-title">Display Data -
+            <small class="category">View your medical history</small>
+          </h4>
+          <form>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="card-content">
+                  <h4 class="card-title">Civil status :</h4>
+                  <form>
+                    <div class="row">
+                      <div class="col-md-6">
+                        FirstName :
+                      </div>
+                      <div class="col-md-6">
+                          <mat-form-field>
+                             <input matInput type="text" placeholder="Firstname" name="firstname">
+                          </mat-form-field>
+                      </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                          LastName :
+                        </div>
+                        <div class="col-md-6">
+                            <mat-form-field>
+                               <input matInput type="text" placeholder="Lastname" name="lastname">
+                            </mat-form-field>
+                        </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-md-6">
+                            Address :
+                          </div>
+                          <div class="col-md-6">
+                              <mat-form-field>
+                                 <input matInput type="text" placeholder="Address" name="address" >
+                              </mat-form-field>
+                          </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                              <mat-form-field color="accent">
+                                <input matInput type="text" placeholder="City" >
+                              </mat-form-field>
+                            </div>
+                            <div class="col-md-4">
+                              <mat-form-field color="accent">
+                                <input matInput type="text" placeholder="Country">
+                              </mat-form-field>
+                            </div>
+                            <div class="col-md-4">
+                              <mat-form-field color="accent">
+                                <input matInput type="text" placeholder="Postcode">
+                              </mat-form-field>
+                            </div>
+                          </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                  <div class="card-content">
+                    <h4 class="card-title">Medical history :</h4>
+                    <form>
+                      <div class="row">
+                        <div class="col-md-6">
+                          RecordId :
+                        </div>
+                        <div class="col-md-6">
+                            <mat-form-field>
+                               <input matInput type="text" placeholder="RecordId" name="recordid" >
+                            </mat-form-field>
+                        </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-md-6">
+                              Diseases :
+                          </div>
+                          <div class="col-md-6">
+                              <mat-form-field>
+                                 <input matInput type="text" placeholder="Diseases" name="diseases" >
+                              </mat-form-field>
+                          </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                              Allergies :
+                            </div>
+                            <div class="col-md-6">
+                                <mat-form-field>
+                                   <input matInput type="text" placeholder="Allergies" name="allergies" >
+                                </mat-form-field>
+                            </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-md-6">Last consultation :</div>
+                              <div class="col-md-6">
+                              <mat-form-field color="accent">
+                                <input matInput type="text" placeholder="Date" name="dateconsultation" >
+                              </mat-form-field>
+                              <mat-form-field color="accent">
+                                  <input matInput type="text" placeholder="Symptoms" name="symptoms" >
+                                </mat-form-field>
+                                <mat-form-field color="accent">
+                                    <input matInput type="text" placeholder="radiologie" name="radiologie" >
+                                  </mat-form-field>
+                                  <mat-form-field color="accent">
+                                      <input matInput type="text" placeholder="Medical acts" name="medicalacts" >
+                                    </mat-form-field>
+                                    <mat-form-field color="accent">
+                                        <input matInput type="text-area" placeholder="Description" name="description" >
+                                      </mat-form-field>
+                              </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">Personal Health :</div>
+                                <div class="col-md-6">
+                                <mat-form-field color="accent">
+                                  <input matInput type="text" placeholder="Automedication" name="medicine" >
+                                </mat-form-field>
+                                <mat-form-field color="accent">
+                                    <input matInput type="text" placeholder="Habits" name="symptoms" >
+                                  </mat-form-field>
+                                  <mat-form-field color="accent">
+                                      <input matInput type="text" placeholder="Symptomes" name="radiologie" >
+                                    </mat-form-field>
+                                </div>
+                              </div>
+                              <div class="row">
+                                  <div class="col-md-6">Hospitalisation :</div>
+                                  <div class="col-md-6">
+                                  <mat-form-field color="accent">
+                                    <input matInput type="text" placeholder="Entry date" name="entrydate" >
+                                  </mat-form-field>
+                                  <mat-form-field color="accent">
+                                      <input matInput type="text" placeholder="Period" name="period" >
+                                    </mat-form-field>
+                                    <mat-form-field color="accent">
+                                        <input matInput type="text" placeholder="Reason" name="reason" >
+                                      </mat-form-field>
+                                      <mat-form-field color="accent">
+                                          <input matInput type="text" placeholder="Urgent" name="urgent" >
+                                        </mat-form-field>
+                                        <div class="row">
+                                            <div class="col-md-6">Address :</div>
+                                            <div class="col-md-6">
+                                            <mat-form-field color="accent">
+                                              <input matInput type="text" placeholder="Address" name="address" >
+                                            </mat-form-field>
+                                            <mat-form-field color="accent">
+                                                <input matInput type="text" placeholder="City" name="city" >
+                                              </mat-form-field>
+                                              <mat-form-field color="accent">
+                                                  <input matInput type="text" placeholder="State" name="state" >
+                                                </mat-form-field>
+                                                <mat-form-field color="accent">
+                                                    <input matInput type="text" placeholder="Country" name="country" >
+                                                  </mat-form-field>
+                                            </div>
+                                        </div>
+                                        <mat-form-field color="accent">
+                                            <input matInput type="text" placeholder="Medical acts" name="medicalacts" >
+                                          </mat-form-field>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">Last dispensation :</div>
+                                    <div class="col-md-6">
+                                    <mat-form-field color="accent">
+                                      <input matInput type="text" placeholder="date" name="date" >
+                                    </mat-form-field>
+                                    <mat-form-field color="accent">
+                                        <input matInput type="text" placeholder="Symptomes" name="symptoms" >
+                                      </mat-form-field>
+                                      <mat-form-field color="accent">
+                                          <input matInput type="textarea" placeholder="Description" name="description" >
+                                        </mat-form-field>
+                                        <div class="row">
+                                            <div class="col-md-6">Dispensation :</div>
+                                            <div class="col-md-6">
+                                            <mat-form-field color="accent">
+                                              <input matInput type="text" placeholder="NoId" name="noid" >
+                                            </mat-form-field>
+                                            <mat-form-field color="accent">
+                                                <input matInput type="text" placeholder="Name" name="name" >
+                                              </mat-form-field>
+                                              <mat-form-field color="accent">
+                                                  <input matInput type="text" placeholder="Peusologie" name="peusologie" >
+                                                </mat-form-field>
+                                                <mat-form-field color="accent">
+                                                    <input matInput type="text" placeholder="amount" name="amount" >
+                                                  </mat-form-field>
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </div>
+
+                    </form>
+                  </div>
+                </div>
+              </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

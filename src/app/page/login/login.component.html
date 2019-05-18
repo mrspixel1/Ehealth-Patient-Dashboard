@@ -1,0 +1,51 @@
+<div class="background"></div>
+<div class="container">
+  <div class="container">
+    <div class="row">
+      <app-header></app-header>
+    </div>
+   <div class="row">
+     <div class="col-md-4 col-sm-6 col-md-offset-4 col-sm-offset-3">
+       <div class="card">
+         <div class="card-header">
+            <h4>Login with</h4>
+           <div class="social-btns">
+             <button mat-icon-button><i class="fa fa-facebook-square"></i></button>
+             <button mat-icon-button><i class="fa fa-twitter"></i></button>
+             <button mat-icon-button><i class="fa fa-google-plus"></i></button>
+             <button mat-icon-button><i class="fa fa-linkedin"></i></button>
+           </div>
+         </div>
+         <p class="tip">Or Be Classical</p>
+         <form (submit)="loginBtn(loginForm)" #loginForm="ngForm">
+         <div class="card-form">
+           <div class="form-row">
+             <i class="material-icons">email</i>
+             <mat-form-field color="accent">
+               <input matInput name="email" ngModel type="email" placeholder="Email address" #emailInput="ngModel" required email/>
+               <mat-error *ngIf="emailInput.invalid">Please enter a valid email</mat-error>
+             </mat-form-field>
+           </div>
+           <div class="form-row">
+             <i class="material-icons">lock_outline</i>
+             <mat-form-field color="accent">
+               <input type="password" name="password" ngModel matInput placeholder="Password" #passwordInput="ngModel" required/>
+               <mat-error *ngIf="passwordInput.invalid">Please enter a valid password</mat-error>
+             </mat-form-field>
+           </div>
+         </div>
+         <div class="card-footer">
+            <button mat-button type="submit" *ngIf="!isLoading">LOGIN</button>
+            <mat-spinner [diameter]="30" *ngIf="isLoading" style="margin:0 auto;" mode="indeterminate"></mat-spinner>
+         </div>
+         </form>
+         <div class="card-footer">
+           <p>Dont have an account?
+          <a routerLink=register routerLinkActive="router-link-active">REGISTER</a></p>
+        </div>
+       </div>
+     </div>
+   </div>
+  </div>
+</div>
+
