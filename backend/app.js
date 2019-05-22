@@ -6,7 +6,7 @@ const bodyparser= require("body-parser");
 const app = express();
 app.use(cors());
 app.use(bodyparser.json());
-mongoose.connect("mongodb+srv://max:e2qaFCnuJWqqsM1U@cluster0-lgcwy.mongodb.net/node-angular")
+mongoose.connect("mongodb+srv://max:cqrvgaYv5mg9GqEd@cluster0-lgcwy.mongodb.net/node-angular")
 .then(() => {
   console.log('Connected to database!')
 })

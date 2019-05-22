@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Appservice } from '../app.service';
+
 
 @Component({
   selector: 'app-patient-display',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PatientDisplayComponent implements OnInit {
 
-  constructor() { }
+  constructor(public appservice: Appservice) { }
 
   ngOnInit() {
+    this.onLoad();
+  }
+
+  onLoad() {
+    this.appservice.readEhr();
+
   }
 
 }
